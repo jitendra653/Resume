@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Details</title>
+  <style>
+    @media screen and (max-width: 600px) {
+      .main {
+        width: auto !important;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid blue; */
+      }
+
+    }
+    .main {
+      width: 400px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color:pink;
+      /* border: 1px solid blue; */
+    }
+
+    .main legend{
+      color:orange;
+    }
+
+    .main label {
+      color: brown;
+      padding-left: 25%;
+    }
+
+.gen {
+      color: brown;
+      padding-left: 25%;
+    }
+
+    .main input,
+    select {
+      margin-top: 3px;
+      margin-bottom: 10px;
+      margin-left: 25%;
+    }
+
+    .main form {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <!--app-head-->
+</head>
+
+<body>
+  <div id="app" class="main">
+    <fieldset>
+      <legend>Employee Details Form</legend>
+
+      <form action="" method="get">
+        <label for="name">Employee name : </label><br>
+        <input type="text" name="name" required><br>
+        <label for="Age">Age :</label><br>
+        <input type="number" name="age" min=1 required><br>
+        <label for="Gender">Gender :</label><br>
+        <input type="radio" name="Gender" id="male" value="Male">
+        <label for="male" style=" padding-left: 10px !important;">Male</label>
+        <input type="radio" name="Gender" style=" margin-left: 2%;" id="female" value="Female">
+        <label for="female" style=" padding-left: 10px !important;">Female</label><br>
+        <label for="designation">Designation :</label><br>
+        <input type="text" name="designation" id="" required><br>
+        <label for="salary">Salary :</label><br>
+        <input type="number" name="salary" id="" required><br>
+        <label for="location">Location :</label><br>
+        <select name="location" id="location" required>
+          <option value="AN">Andaman and Nicobar Islands</option>
+          <option value="AP">Andhra Pradesh</option>
+          <option value="AR">Arunachal Pradesh</option>
+          <option value="AS">Assam</option>
+          <option value="BR">Bihar</option>
+          <option value="CH">Chandigarh</option>
+          <option value="CT">Chhattisgarh</option>
+          <option value="DN">Dadra and Nagar Haveli</option>
+          <option value="DD">Daman and Diu</option>
+          <option value="DL">Delhi</option>
+          <option value="GA">Goa</option>
+          <option value="GJ">Gujarat</option>
+          <option value="HR">Haryana</option>
+          <option value="HP">Himachal Pradesh</option>
+          <option value="JK">Jammu and Kashmir</option>
+          <option value="JH">Jharkhand</option>
+          <option value="KA">Karnataka</option>
+          <option value="KL">Kerala</option>
+          <option value="LA">Ladakh</option>
+          <option value="LD">Lakshadweep</option>
+          <option value="MP">Madhya Pradesh</option>
+          <option value="MH">Maharashtra</option>
+          <option value="MN">Manipur</option>
+          <option value="ML">Meghalaya</option>
+          <option value="MZ">Mizoram</option>
+          <option value="NL">Nagaland</option>
+          <option value="OR">Odisha</option>
+          <option value="PY">Puducherry</option>
+          <option value="PB">Punjab</option>
+          <option value="RJ">Rajasthan</option>
+          <option value="SK">Sikkim</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="TG">Telangana</option>
+          <option value="TR">Tripura</option>
+          <option value="UP">Uttar Pradesh</option>
+          <option value="UT">Uttarakhand</option>
+          <option value="WB">West Bengal</option>
+        </select><br>
+        <label for="Email ID">Email ID :</label><br>
+        <input type="email" name="email" id="" required><br>
+        <label for="dog">Date of Joining :</label><br>
+        <input type="date" name="doj" required><br>
+        <label for="contact">Contact Number :</label><br>
+        <input type="mob" name="contact" id="" min="0000000000" max="999999999" maxlength="10" minlength="10"
+          required><br>
+        <input type="submit" style="background-color: blue;color: white;text-align: center;" value="Submit">
+      </form>
+    </fieldset>
+  </div>
+</body>
+</html>
